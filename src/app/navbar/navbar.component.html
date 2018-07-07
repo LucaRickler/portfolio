@@ -5,7 +5,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item mr-4 text-center" *ngFor="let el of navs; index as i;">
-        <a class="nav-link" routerLink="{{ navs[i].url }}">{{ navs[i].title }}</a>
+        <a class="nav-link" routerLink="{{ navs[i].url }}" routerLinkActive="active">
+          {{ navs[i].title }}
+        </a>
       </li>
     </ul>
   </div>

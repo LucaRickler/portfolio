@@ -6,8 +6,11 @@ import { WelcomeComponent } from '../welcome/welcome.component';
 import { ContactComponent } from '../contact/contact.component';
 
 const routes: Routes = [
+  { path: 'home', redirectTo: '', pathMatch: 'full' },
   { path: '', component: LandingComponent },
   { path: 'welcome', component: WelcomeComponent },
+//  { path: 'portfolio', component:  },
+//  { path: 'resume', compomemt: },
   { path: 'contacts', component: ContactComponent }
 ];
 

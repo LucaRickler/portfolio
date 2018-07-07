@@ -6,7 +6,7 @@ import { Nav } from './nav';
 })
 export class NavbarService {
   navs: Nav[] = [
-    new Nav('Home', '/'),
+    new Nav('Home', '/welcome'),
     new Nav('Portfolio', '/portfolio'),
     new Nav('Résumé', '/resume'),
     new Nav('Contac Me', '/contacts')
