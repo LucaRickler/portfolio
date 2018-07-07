@@ -11,3 +11,10 @@ h1 {
   font-weight: 500;
   font-size:6em;
 }
+
+.center-vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
