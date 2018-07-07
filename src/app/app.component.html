@@ -1,7 +1,5 @@
+<angular-navbar></angular-navbar>
 <main class="text-center" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
-  <angular-navbar></angular-navbar>
-  <div>
-    <router-outlet #o="outlet"></router-outlet>
-  </div>
-  <angular-footer></angular-footer>
+  <router-outlet #o="outlet"></router-outlet>
 </main>
+<angular-footer></angular-footer>
