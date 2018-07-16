@@ -6,8 +6,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
-  { path: 'home', redirectTo: '', pathMatch: 'full' },
-  { path: '', component: LandingComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: LandingComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: 'portfolio', loadChildren: 'src/app/portfolio/portfolio-routing.module#PortfolioRoutingModule' },
 //  { path: 'resume', compomemt: },
