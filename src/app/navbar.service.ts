@@ -8,7 +8,7 @@ export class NavbarService {
   navs: Nav[] = [
     new Nav('Home', '/welcome'),
     new Nav('Portfolio', '/portfolio'),
-    new Nav('Résumé', '/resume'),
+//    new Nav('Résumé', '/resume'),
     new Nav('Contac Me', '/contacts')
   ];
 

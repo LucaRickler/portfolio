@@ -8,8 +8,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LandingComponent } from './landing/landing.component';
-import { AppRoutingModule } from './app-routing/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { ContactComponent } from './contact/contact.component';
+
+import { PortfolioModule } from './portfolio/portfolio.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    PortfolioModule,
     NgbModule.forRoot(),
     AppRoutingModule
   ],
