@@ -3,19 +3,19 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppComponent } from './app.component';
+import { CoreComponent } from './core.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LandingComponent } from './landing/landing.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './core-routing.module';
 import { ContactComponent } from './contact/contact.component';
 
-import { PortfolioModule } from './portfolio/portfolio.module';
+import { PortfolioModule } from '../modules/portfolio/portfolio.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    CoreComponent,
     NavbarComponent,
     FooterComponent,
     WelcomeComponent,
@@ -30,6 +30,6 @@ import { PortfolioModule } from './portfolio/portfolio.module';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [CoreComponent]
 })
 export class AppModule { }

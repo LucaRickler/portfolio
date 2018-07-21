@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: LandingComponent },
   { path: 'about', component: WelcomeComponent },
-  { path: 'portfolio', loadChildren: 'src/app/portfolio/portfolio-routing.module#PortfolioRoutingModule' },
+  { path: 'portfolio', loadChildren: 'src/app/modules/portfolio/portfolio-routing.module#PortfolioRoutingModule' },
 //  { path: 'resume', compomemt: },
   { path: 'contacts', component: ContactComponent }
 ];
