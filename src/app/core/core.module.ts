@@ -14,6 +14,8 @@ import { AppRoutingModule } from './core-routing.module';
 import { ContactComponent } from './contact/contact.component';
 
 import { PortfolioModule } from '../modules/portfolio/portfolio.module';
+import { RouteReuseStrategy } from '@angular/router';
+import { CustomReuseStrategy } from './custom-reuse.strategy';
 
 
 @NgModule({
@@ -34,7 +36,7 @@ import { PortfolioModule } from '../modules/portfolio/portfolio.module';
     MarkdownModule.forRoot({ loader: HttpClient }),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{provide: RouteReuseStrategy, useClass: CustomReuseStrategy}],
   bootstrap: [CoreComponent]
 })
 export class AppModule { }
