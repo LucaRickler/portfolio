@@ -35,7 +35,6 @@ export class PortfolioComponent implements OnInit {
       if (index > -1) {
         this.orderedElements[index].elements.push(this.elements[e]);
       } else {
-        console.log(category);
         const j = this.orderedElements.push(new Category(category, []));
         this.orderedElements[j - 1].elements.push(this.elements[e]);
       }
