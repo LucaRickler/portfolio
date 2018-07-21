@@ -30,10 +30,6 @@ export class PortfolioService {
         if (i >= ELEMENTS.length) {
           i = ELEMENTS.length - 1;
         }
-        console.log('ELEMENTS.length: ', ELEMENTS.length);
-        console.log('e:', e);
-        console.log('i', i);
-        console.log(ELEMENTS[i]);
         return ELEMENTS[i];
       }
     }
