@@ -11,6 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class PortfolioElementComponent implements OnInit {
 
   id: string;
+  previousID: string;
+  nextID: string;
   element: PortfolioElement;
 
   constructor(
@@ -25,16 +27,7 @@ export class PortfolioElementComponent implements OnInit {
   getElement(): void {
     this.id = this.route.snapshot.paramMap.get('id');
     this.element = this.portfolioService.getElement(this.id);
+    this.previousID = this.portfolioService.previousElement(this.id).id;
+    this.nextID = this.portfolioService.nextElement(this.id).id;
   }
-
-  previous(): void {
-    this.portfolioService.previousElement(this.id);
-    this.getElement();
-  }
-
-  next(): void {
-    this.portfolioService.nextElement(this.id);
-    this.getElement();
-  }
-
 }

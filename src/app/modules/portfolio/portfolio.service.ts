@@ -11,17 +11,31 @@ export class PortfolioService {
 
   constructor() { }
 
-  previousElement(id: string): void {
-    this.currentElement -= 1;
-    if (this.currentElement < 0) {
-      this.currentElement = 0;
+  previousElement(id: string): PortfolioElement {
+    for (const e in ELEMENTS) {
+      if (ELEMENTS[e].id === id) {
+        let i = Number(e) - 1;
+        if (i < 0) {
+          i = 0;
+        }
+        return ELEMENTS[i];
+      }
     }
   }
 
-  nextElement(id: string): void {
-    this.currentElement += 1;
-    if (this.currentElement >= ELEMENTS.length) {
-      this.currentElement = ELEMENTS.length - 1;
+  nextElement(id: string): PortfolioElement {
+    for (const e in ELEMENTS) {
+      if (ELEMENTS[e].id === id) {
+        let i = Number(e) + 1;
+        if (i >= ELEMENTS.length) {
+          i = ELEMENTS.length - 1;
+        }
+        console.log('ELEMENTS.length: ', ELEMENTS.length);
+        console.log('e:', e);
+        console.log('i', i);
+        console.log(ELEMENTS[i]);
+        return ELEMENTS[i];
+      }
     }
   }
 
