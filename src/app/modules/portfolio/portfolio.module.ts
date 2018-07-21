@@ -6,7 +6,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioElementComponent } from './components/portfolio-element/portfolio-element.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
-import { IndexComponent } from './component/index/index.component';
+import { IndexComponent } from './components/index/index.component';
 
 @NgModule({
   imports: [
