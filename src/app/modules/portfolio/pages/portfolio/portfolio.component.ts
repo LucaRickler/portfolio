@@ -26,7 +26,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   getElements(): void {
-    this.elements = this.porfolioService.getElements();
+    this.porfolioService.getElements().subscribe(elements => this.elements = elements);
     this.orderedElements = [];
     // tslint:disable-next-line:forin
     for (const e in this.elements) {

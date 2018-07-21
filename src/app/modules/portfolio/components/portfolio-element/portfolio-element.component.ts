@@ -26,8 +26,8 @@ export class PortfolioElementComponent implements OnInit {
 
   getElement(): void {
     this.id = this.route.snapshot.paramMap.get('id');
-    this.element = this.portfolioService.getElement(this.id);
-    this.previousID = this.portfolioService.previousElement(this.id).id;
-    this.nextID = this.portfolioService.nextElement(this.id).id;
+    this.portfolioService.getElement(this.id).subscribe(element => this.element = element);
+    this.portfolioService.previousElement(this.id).subscribe(element => this.previousID = element.id);
+    this.portfolioService.nextElement(this.id).subscribe(element => this.nextID = element.id);
   }
 }

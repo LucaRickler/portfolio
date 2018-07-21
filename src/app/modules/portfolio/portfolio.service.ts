@@ -11,40 +11,40 @@ export class PortfolioService {
 
   constructor() { }
 
-  previousElement(id: string): PortfolioElement {
+  previousElement(id: string): Observable<PortfolioElement> {
     for (const e in ELEMENTS) {
       if (ELEMENTS[e].id === id) {
         let i = Number(e) - 1;
         if (i < 0) {
           i = 0;
         }
-        return ELEMENTS[i];
+        return of(ELEMENTS[i]);
       }
     }
   }
 
-  nextElement(id: string): PortfolioElement {
+  nextElement(id: string): Observable<PortfolioElement> {
     for (const e in ELEMENTS) {
       if (ELEMENTS[e].id === id) {
         let i = Number(e) + 1;
         if (i >= ELEMENTS.length) {
           i = ELEMENTS.length - 1;
         }
-        return ELEMENTS[i];
+        return of(ELEMENTS[i]);
       }
     }
   }
 
-  getElement(id: string): PortfolioElement {
+  getElement(id: string): Observable<PortfolioElement> {
     for (const e in ELEMENTS) {
       if (ELEMENTS[e].id === id) {
-        return ELEMENTS[e];
+        return of(ELEMENTS[e]);
       }
     }
     // return ELEMENTS[this.currentElement];
   }
 
-  getElements(): PortfolioElement[] {
-    return ELEMENTS;
+  getElements(): Observable<PortfolioElement[]> {
+    return of(ELEMENTS);
   }
 }
