@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PortfolioElementComponent } from './components/portfolio-element/portfolio-element.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { IndexComponent } from './component/index/index.component';
 
 const routes: Routes = [
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'portfolio/:id', component: PortfolioElementComponent }
+  { path: 'portfolio', component: PortfolioComponent, children: [
+    { path: '', component: IndexComponent },
+    { path: ':id', component: PortfolioElementComponent }
+  ]},
 ];
 
 @NgModule({
