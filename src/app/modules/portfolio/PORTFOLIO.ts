@@ -18,6 +18,21 @@ export const ELEMENTS: PortfolioElement[] = [
     null,
     'Videogames'
   ),
+  new PortfolioElement(
+    'polarity',
+    'Polarity - Global Game Jam 2018', [
+      'Unity',
+      'C#',
+      'Windows',
+      'Mac',
+      'Linux'
+    ],
+    // tslint:disable-next-line:max-line-length
+    'A 3D action game whith a sci-fi vibe.',
+    [],
+    'https://itch.io/embed/219217?border_width=5&amp;bg_color=303030&amp;fg_color=FFE762&amp;link_color=ff0000&amp;border_color=FFE762',
+    'Game Jams'
+  ),
   // new PortfolioElement('1', '', [], '', [], '')
 ];
 
