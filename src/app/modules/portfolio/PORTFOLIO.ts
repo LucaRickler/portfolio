@@ -17,6 +17,6 @@ export const ELEMENTS: PortfolioElement[] = [
     ['Screenshot_5_16.9.png', 'Screenshot_3_16.9b_small.png'],
     'Videogames'
   ),
-  new PortfolioElement('1', '', [], '', [], '')
+  // new PortfolioElement('1', '', [], '', [], '')
 ];
 

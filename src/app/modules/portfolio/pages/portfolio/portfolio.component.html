@@ -1,3 +1,14 @@
-<p>
-  portfolio works!
-</p>
+<div class="center-vertical">
+  <h2>Porfolio</h2>
+  <hr>
+  <ul>
+    <li *ngFor="let category of orderedElements; let i = index">
+      <h3>{{ category.name }}</h3>
+      <ul>
+        <li *ngFor="let element of orderedElements[i].elements; let j = index">
+          <a routerLink="/porfolio/{{element.id}}">{{element.title}}</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
