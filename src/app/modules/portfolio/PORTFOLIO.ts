@@ -80,7 +80,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'Root'
     ],
     // tslint:disable-next-line:max-line-length
-    'Simulation of a simple [particle shower](https://en.wikipedia.org/wiki/Particle_shower) event.\n\nThe project is built using the [Root Data Analysis Framework](https://root.cern.ch/), by [CERN](https://cern.ch/) (required for running the project).\n\nSource code can be found [here](https://github.com/LucaRickler/TANS), while [this](assets/Relazione tans.pdf) is the project report (italian only).',
+    'Simulation of a simple [particle shower](https://en.wikipedia.org/wiki/Particle_shower) event.\n\nThe project is built using the [Root Data Analysis Framework](https://root.cern.ch/), by [CERN](https://cern.ch/) (required for running the project).\n\nSource code can be found [here](https://github.com/LucaRickler/TANS), while [this](./assets/relazione_tans.pdf) is the project report (italian only).',
     [],
     null,
     'Exam Projects'
@@ -93,7 +93,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'pthread'
     ],
     // tslint:disable-next-line:max-line-length
-    'A multi-agent-based simulation framework, built in C++ (std 2011) and pthread.\n\nSource code can be found [here](https://github.com/LucaRickler/PDS---Progetto-d-esame), while [this](assets/relazione pds.pdf) is the project report (italian only).',
+    'A multi-agent-based simulation framework, built in C++ (std 2011) and pthread.\n\nSource code can be found [here](https://github.com/LucaRickler/PDS---Progetto-d-esame), while [this](./assets/relazione_pds.pdf) is the project report (italian only).',
     [],
     null,
     'Exam Projects'
@@ -106,7 +106,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'Jade'
     ],
     // tslint:disable-next-line:max-line-length
-    'A multi-agent-based simulation for the modellization of the rationality of people’s decisions in a peer to peer Environment.\n\nBuilt in Java using the multi-agent library [Jade](http://jade.tilab.com/), by [CERN](https://cern.ch/) (required for running the project).\n\nSource code can be found [here](https://github.com/LucaRickler/M.A.S.-Lab), while [this](assets/relazione mas.pdf) is the project report (english only).',
+    'A multi-agent-based simulation for the modellization of the rationality of people’s decisions in a peer to peer Environment.\n\nBuilt in Java using the multi-agent library [Jade](http://jade.tilab.com/), by [CERN](https://cern.ch/) (required for running the project).\n\nSource code can be found [here](https://github.com/LucaRickler/M.A.S.-Lab), while [this](./assets/relazione_mas.pdf) is the project report (english only).',
     [],
     null,
     'Exam Projects'
