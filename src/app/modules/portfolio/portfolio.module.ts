@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioElementComponent } from './components/portfolio-element/portfolio-element.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,6 @@ import { PortfolioElementComponent } from './components/portfolio-element/portfo
     NgbModule.forRoot(),
     PortfolioRoutingModule
   ],
-  declarations: [PortfolioElementComponent]
+  declarations: [PortfolioElementComponent, PortfolioComponent]
 })
 export class PortfolioModule { }

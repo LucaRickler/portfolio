@@ -2,6 +2,7 @@ import { PortfolioElement } from './portfolio.element';
 
 export const ELEMENTS: PortfolioElement[] = [
   new PortfolioElement(
+    'mathdungeon',
     'MathDungeon', [
       'Unity',
       'C#',
@@ -16,6 +17,6 @@ export const ELEMENTS: PortfolioElement[] = [
     ['Screenshot_5_16.9.png', 'Screenshot_3_16.9b_small.png'],
     'Videogames'
   ),
-  new PortfolioElement('', [], '', [], '')
+  new PortfolioElement('1', '', [], '', [], '')
 ];
 

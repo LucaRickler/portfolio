@@ -8,6 +8,7 @@ import { PortfolioService } from '../../portfolio.service';
   styleUrls: ['./portfolio-element.component.css']
 })
 export class PortfolioElementComponent implements OnInit {
+  id: string;
   element: PortfolioElement;
   constructor(private portfolioService: PortfolioService) { }
 
@@ -16,16 +17,17 @@ export class PortfolioElementComponent implements OnInit {
   }
 
   getElement(): void {
-    this.element = this.portfolioService.getElement();
+    console.log(this.id);
+    this.element = this.portfolioService.getElement(this.id);
   }
 
   previous(): void {
-    this.portfolioService.previousElement();
+    this.portfolioService.previousElement(this.id);
     this.getElement();
   }
 
   next(): void {
-    this.portfolioService.nextElement();
+    this.portfolioService.nextElement(this.id);
     this.getElement();
   }
 

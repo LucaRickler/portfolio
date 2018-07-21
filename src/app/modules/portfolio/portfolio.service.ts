@@ -11,21 +11,25 @@ export class PortfolioService {
 
   constructor() { }
 
-  previousElement(): void {
+  previousElement(id: string): void {
     this.currentElement -= 1;
     if (this.currentElement < 0) {
       this.currentElement = 0;
     }
   }
 
-  nextElement(): void {
+  nextElement(id: string): void {
     this.currentElement += 1;
     if (this.currentElement >= ELEMENTS.length) {
       this.currentElement = ELEMENTS.length - 1;
     }
   }
 
-  getElement(): PortfolioElement {
+  getElement(id: string): PortfolioElement {
     return ELEMENTS[this.currentElement];
+  }
+
+  getElements(): PortfolioElement[] {
+    return ELEMENTS;
   }
 }
