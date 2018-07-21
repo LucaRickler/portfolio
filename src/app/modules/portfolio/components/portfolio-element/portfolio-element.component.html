@@ -2,9 +2,13 @@
   <h2>Portfolio: {{ element.category }}</h2>
   <hr>
   <h4>
-    <a class="float-left" *ngIf="previousID != id" routerLink="/portfolio/{{previousID}}">previous</a>
-    {{ element.title }}
-    <a class="float-right" *ngIf="nextID != id" routerLink="/portfolio/{{nextID}}">next</a>
+    <a class="float-left" routerLink="/portfolio/{{previousID}}">
+      <fa name="angle-left" size="lg" *ngIf="previousID != id"></fa>
+    </a>
+    <span class="ml-4 mr-4">{{ element.title }}</span>
+    <a class="float-right" routerLink="/portfolio/{{nextID}}">
+        <fa name="angle-right" size="lg" *ngIf="nextID != id"></fa>
+    </a>
   </h4>
   <hr>
   <div>

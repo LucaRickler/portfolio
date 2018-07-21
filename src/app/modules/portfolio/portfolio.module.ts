@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 import { MarkdownModule } from 'ngx-markdown';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { PortfolioRoutingModule } from './portfolio-routing.module';
 import { PortfolioElementComponent } from './components/portfolio-element/portfolio-element.component';
@@ -11,6 +12,7 @@ import { IndexComponent } from './components/index/index.component';
 @NgModule({
   imports: [
     CommonModule,
+    AngularFontAwesomeModule,
     MarkdownModule.forChild(),
     NgbModule.forRoot(),
     PortfolioRoutingModule

@@ -12,6 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LandingComponent } from './landing/landing.component';
 import { AppRoutingModule } from './core-routing.module';
 import { ContactComponent } from './contact/contact.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { PortfolioModule } from '../modules/portfolio/portfolio.module';
 import { RouteReuseStrategy } from '@angular/router';
@@ -30,6 +31,7 @@ import { CustomReuseStrategy } from './custom-reuse.strategy';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AngularFontAwesomeModule,
     PortfolioModule,
     HttpClientModule,
     NgbModule.forRoot(),
