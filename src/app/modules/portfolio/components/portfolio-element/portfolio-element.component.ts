@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioElement } from '../../portfolio.element';
 import { PortfolioService } from '../../portfolio.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'angular-portfolio-element',
@@ -8,16 +9,21 @@ import { PortfolioService } from '../../portfolio.service';
   styleUrls: ['./portfolio-element.component.css']
 })
 export class PortfolioElementComponent implements OnInit {
+
   id: string;
   element: PortfolioElement;
-  constructor(private portfolioService: PortfolioService) { }
+
+  constructor(
+    private route: ActivatedRoute,
+    private portfolioService: PortfolioService
+  ) { }
 
   ngOnInit() {
     this.getElement();
   }
 
   getElement(): void {
-    console.log(this.id);
+    this.id = this.route.snapshot.paramMap.get('id');
     this.element = this.portfolioService.getElement(this.id);
   }
 

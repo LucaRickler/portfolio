@@ -26,7 +26,12 @@ export class PortfolioService {
   }
 
   getElement(id: string): PortfolioElement {
-    return ELEMENTS[this.currentElement];
+    for (const e in ELEMENTS) {
+      if (ELEMENTS[e].id === id) {
+        return ELEMENTS[e];
+      }
+    }
+    // return ELEMENTS[this.currentElement];
   }
 
   getElements(): PortfolioElement[] {
