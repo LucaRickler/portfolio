@@ -1,21 +1,28 @@
 <div class="center-vertical">
-  <h2>Portfolio</h2>
+  <h2>Portfolio: {{ element.category }}</h2>
   <hr>
-  <h4>{{ element.title }}</h4>
+  <h4>
+    <a class="float-left" *ngIf="previousID != id" routerLink="/portfolio/{{previousID}}">previous</a>
+    {{ element.title }}
+    <a class="float-right" *ngIf="nextID != id" routerLink="/portfolio/{{nextID}}">next</a>
+  </h4>
   <hr>
   <div>
-    <a *ngIf="previousID != id" routerLink="/portfolio/{{previousID}}">previous</a>
+    
     <div>
       <p>
         <span  *ngFor="let badge of element.pills; let i = index" class="badge badge-secondary badge-pill mr-2">{{badge}}</span>
       </p>
-      {{element.text}}
+      <div markdown [data]="element.text"></div>
       <div class="row">
         <div class="col-md-6 col-sm-12"  *ngFor="let image of element.images; let i = index">
           <img src="assets/{{image}}">
         </div>
+        <div class="col-md-6 col-sm-12"  *ngIf="element.iframe">
+          <iframe src="{{element.iframe}}"></iframe>
+        </div>
       </div>
     </div>
-    <a *ngIf="nextID != id" routerLink="/portfolio/{{nextID}}">next</a>
+    
   </div>
 </div>
