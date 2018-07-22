@@ -2,11 +2,11 @@
   <h2>Portfolio: {{ element.category }}</h2>
   <hr>
   <h4>
-    <a class="float-left" routerLink="/portfolio/{{previousID}}">
+    <a class="float-left ml-2" routerLink="/portfolio/{{previousID}}">
       <fa name="angle-left" size="lg" *ngIf="previousID != id"></fa>
     </a>
     <span class="ml-4 mr-4">{{ element.title }}</span>
-    <a class="float-right" routerLink="/portfolio/{{nextID}}">
+    <a class="float-right mr-2" routerLink="/portfolio/{{nextID}}">
         <fa name="angle-right" size="lg" *ngIf="nextID != id"></fa>
     </a>
   </h4>
@@ -18,12 +18,14 @@
         <span  *ngFor="let badge of element.pills; let i = index" class="badge badge-secondary badge-pill mr-2">{{badge}}</span>
       </p>
       <div markdown [data]="element.text"></div>
-      <div class="row">
-        <div class="col-md-6 col-sm-12"  *ngFor="let image of element.images; let i = index">
-          <img src="assets/{{image}}">
-        </div>
-        <div class="col-md-6 col-sm-12"  *ngIf="element.iframe">
-          <iframe [src]='element.iframe | safe' width="560" height="175" frameborder="0"></iframe>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-12"  *ngFor="let image of element.images; let i = index">
+            <img src="assets/{{image}}">
+          </div>
+          <div class="col-md-6 col-sm-12"  *ngIf="element.iframe">
+            <iframe [src]='element.iframe | safe' width="560" height="175" frameborder="0"></iframe>
+          </div>
         </div>
       </div>
     </div>
