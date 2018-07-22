@@ -10,7 +10,7 @@ export class NavbarService {
     new Nav('About', '/about'),
     new Nav('Portfolio', '/portfolio'),
 //    new Nav('Résumé', '/resume'),
-    new Nav('Contac Me', '/contacts')
+    new Nav('Contact Me', '/contacts')
   ];
 
   constructor() { }
