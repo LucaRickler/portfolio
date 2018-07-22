@@ -8,6 +8,7 @@ import { Nav } from '../nav';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  public isCollapsed = true;
   navs: Nav[];
   constructor(private navbarService: NavbarService) { }
 
