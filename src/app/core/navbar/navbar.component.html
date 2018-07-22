@@ -1,8 +1,9 @@
-<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
       <li class="nav-item mr-4 text-center" *ngFor="let el of navs; index as i;">
         <a class="nav-link" routerLink="{{ navs[i].url }}" routerLinkActive="active">
