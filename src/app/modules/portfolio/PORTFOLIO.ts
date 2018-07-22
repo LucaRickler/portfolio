@@ -57,7 +57,7 @@ export const ELEMENTS: PortfolioElement[] = [
     // tslint:disable-next-line:max-line-length
     'A 2D platformer framework, built with SFML and C++ 11.\n\nIt implements an entity-component-system and a grid-based platformer framework.\n\nSource code can be found <a href="https://github.com/LucaRickler/sfml-2d-platformer" target="_blank">here</a>.',
     ['sfml-2d-p-screenshot.png'],
-    'https://itch.io/embed/113644?border_width=5&amp;bg_color=adadad&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=333333',
+    null,
     'Random Prototypes'
   ),
   new PortfolioElement(
