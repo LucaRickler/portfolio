@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500');
 
 body {
   background-color: lightgoldenrodyellow;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Heebo', sans-serif;
   padding-top: 65px;
   padding-bottom: 65px;
 }
