@@ -17,7 +17,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { PortfolioModule } from '../modules/portfolio/portfolio.module';
 import { RouteReuseStrategy } from '@angular/router';
 import { CustomReuseStrategy } from './custom-reuse.strategy';
-import { SharedModule } from '../shared/shared.module';
+// import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -37,7 +37,7 @@ import { SharedModule } from '../shared/shared.module';
     HttpClientModule,
     NgbModule.forRoot(),
     MarkdownModule.forRoot({ loader: HttpClient }),
-    SharedModule,
+    // SharedModule,
     AppRoutingModule
   ],
   providers: [{provide: RouteReuseStrategy, useClass: CustomReuseStrategy}],

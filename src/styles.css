@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,500');
 
 body {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(255, 255, 235);
   font-family: 'Heebo', sans-serif;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -21,6 +21,11 @@ body {
 h1 {
   font-weight: 500;
   font-size: 4em;
+}
+
+.center-vertical {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 @media only screen and (min-width: 900px) {
