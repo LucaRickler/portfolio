@@ -23,10 +23,17 @@ h1 {
   font-size: 4em;
 }
 
-.center-vertical {
+main {
+  min-height: 80vh;
+  min-width: 100vw;
+  vertical-align: middle;
+  /* justify-items: center; */
+}
+
+/* .center-vertical {
   margin-left: 8px;
   margin-right: 8px;
-}
+} */
 
 @media only screen and (min-width: 900px) {
   h1 {
@@ -34,13 +41,13 @@ h1 {
     font-size:6em;
   }
 
-  .center-vertical {
+  /* .center-vertical {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     min-width: 900px;
-  }
+  } */
 }
 
 h2, h3, h4, .nav-link, .footer {
