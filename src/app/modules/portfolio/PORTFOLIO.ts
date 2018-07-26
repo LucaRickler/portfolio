@@ -19,6 +19,19 @@ export const ELEMENTS: PortfolioElement[] = [
     'Videogames'
   ),
   new PortfolioElement(
+    'martianwaves',
+    'Martian Waves - Global Game Jam 2017', [
+      'Unity',
+      'C#',
+      'WebGL'
+    ],
+    // tslint:disable-next-line:max-line-length
+    'A 2d side-scroller in which a martian sea creature, with a wave cannon on his back, must fight the evil aliens who are invading its planet. Its weapon is also its only way to move around the world, bouncing off the waves reflected on the environment.',
+    [],
+    'https://itch.io/embed/113644?border_width=5&amp;bg_color=adadad&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=333333',
+    'Game Jams'
+  ),
+  new PortfolioElement(
     'polarity',
     'Polarity - Global Game Jam 2018', [
       'Unity',
@@ -31,19 +44,6 @@ export const ELEMENTS: PortfolioElement[] = [
     'A 3D action game whith a sci-fi vibe.',
     [],
     'https://itch.io/embed/219217?border_width=5&amp;bg_color=303030&amp;fg_color=FFE762&amp;link_color=ff0000&amp;border_color=FFE762',
-    'Game Jams'
-  ),
-  new PortfolioElement(
-    'martianwaves',
-    'Martian Waves - Global Game Jam 2017', [
-      'Unity',
-      'C#',
-      'WebGL'
-    ],
-    // tslint:disable-next-line:max-line-length
-    'A 2d side-scroller in which a martian sea creature, with a wave cannon on his back, must fight the evil aliens who are invading its planet. Its weapon is also its only way to move around the world, bouncing off the waves reflected on the environment.',
-    [],
-    'https://itch.io/embed/113644?border_width=5&amp;bg_color=adadad&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=333333',
     'Game Jams'
   ),
   new PortfolioElement(
