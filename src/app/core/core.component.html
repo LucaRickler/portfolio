@@ -1,0 +1,5 @@
+<main class="text-center container d-flex align-items-center justify-content-center" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+  <angular-navbar></angular-navbar>
+  <router-outlet #o="outlet"></router-outlet>
+  <angular-footer></angular-footer>
+</main>
