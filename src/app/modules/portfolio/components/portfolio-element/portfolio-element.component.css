@@ -3,7 +3,8 @@ iframe {
   max-height:100%;
 }
 
-.badge-secondary {
+.badge {
+  /* font-weight: 700; */
   /* background-color: #343a40 !important; */
-  background-color: #f19317 !important;
+  /* background-color: #f19317 !important; */
 }
