@@ -1,7 +1,7 @@
 <div class="center-vertical container">
   <h2>Portfolio: {{ element.category }}</h2>
   <hr>
-  <h4>
+  <h4 class="d-flex align-items-center justify-content-between">
     <a class="float-left ml-2" routerLink="/portfolio/{{previousID}}">
       <fa name="angle-left" size="lg" *ngIf="previousID != id"></fa>
     </a>
