@@ -23,8 +23,8 @@
           <div class="col-md-6 col-sm-12"  *ngFor="let image of element.images; let i = index">
             <img src="assets/{{image}}">
           </div>
-          <div class="col-md-6 col-sm-12"  *ngIf="element.iframe">
-            <a href="{{element.iframe}}" class="btn btn-primary" role="button">Play it on itch.io</a>
+          <div class="col-md-6 col-sm-12"  *ngIf="element.itch">
+            <a href="{{element.itch}}" class="btn btn-primary" role="button">Play it on itch.io</a>
           </div>
         </div>
       </div>
