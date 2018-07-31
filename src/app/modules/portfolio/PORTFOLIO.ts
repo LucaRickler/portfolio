@@ -28,7 +28,7 @@ export const ELEMENTS: PortfolioElement[] = [
     // tslint:disable-next-line:max-line-length
     'A 2d side-scroller in which a martian sea creature, with a wave cannon on his back, must fight the evil aliens who are invading its planet. Its weapon is also its only way to move around the world, bouncing off the waves reflected on the environment.',
     [],
-    'https://itch.io/embed/113644?border_width=5&amp;bg_color=adadad&amp;fg_color=222222&amp;link_color=fa5c5c&amp;border_color=333333',
+    'https://moonlitchameleon.itch.io/martianwave',
     'Game Jams'
   ),
   new PortfolioElement(
@@ -43,7 +43,7 @@ export const ELEMENTS: PortfolioElement[] = [
     // tslint:disable-next-line:max-line-length
     'A 3D action game whith a sci-fi vibe.',
     [],
-    'https://itch.io/embed/219217?border_width=5&amp;bg_color=303030&amp;fg_color=FFE762&amp;link_color=ff0000&amp;border_color=FFE762',
+    'https://moonlitchameleon.itch.io/polarity',
     'Game Jams'
   ),
   new PortfolioElement(
@@ -70,7 +70,7 @@ export const ELEMENTS: PortfolioElement[] = [
     // tslint:disable-next-line:max-line-length
     'An incremental space-agency-manager game, where you build from scratch your space agency and guide it from it\'s humble beginning to the stars.',
     [],
-    'https://itch.io/embed/59689?border_width=5',
+    'https://moonlitchameleon.itch.io/space-inc',
     'Random Prototypes'
   ),
   new PortfolioElement(

@@ -5,7 +5,7 @@ export class PortfolioElement {
     public pills: string[],
     public text: string,
     public images: string[],
-    public iframe: string,
+    public itch: string,
     public category: string
   ) { }
 }
