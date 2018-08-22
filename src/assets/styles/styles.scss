@@ -41,10 +41,13 @@ img {
 
 a {
   color: $link-color;
-}
+  &:hover {
+    color: $accent-color;
+  }
 
-a:hover {
-  color: $accent-color;
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn-primary {
