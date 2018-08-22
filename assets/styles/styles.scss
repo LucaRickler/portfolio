@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500');
+@import "variables.scss";
+
+body {
+  background-color: $bkg-color;
+  font-family: 'Heebo', sans-serif;
+  padding-top: $nav-height;
+  padding-bottom: $foot-height;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 4em;
+}
+
+main {
+  min-height: calc(100vh - #{$nav-height} - #{$foot-height});
+  min-width: 100vw;
+  vertical-align: middle;
+  /* justify-items: center; */
+}
+
+@media only screen and (min-width: 900px) {
+  h1 {
+    font-weight: 500;
+    font-size:6em;
+  }
+}
+
+h2, h3, h4, .nav-link, .footer {
+  font-weight: 500;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+  margin: 10px;
+}
+
+a {
+  color: $link-color;
+}
+
+a:hover {
+  color: $accent-color;
+}
+
+.btn-primary {
+  background-color: $accent-color !important;
+  border-color: $accent-color !important;
+}
