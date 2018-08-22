@@ -1,9 +1,6 @@
 @import "../../../assets/styles/variables.scss";
 
 .footer {
-  /* position: absolute;
-  bottom: 0;
-  width: 100%; */
   height: calc($foot-height - 5px);
   line-height: calc($foot-height - 5px);
   color: $dark-text-color;
