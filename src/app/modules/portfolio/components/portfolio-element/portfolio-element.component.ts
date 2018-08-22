@@ -6,7 +6,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
   selector: 'angular-portfolio-element',
   templateUrl: './portfolio-element.component.html',
-  styleUrls: ['./portfolio-element.component.css']
+  styleUrls: ['./portfolio-element.component.scss']
 })
 export class PortfolioElementComponent implements OnInit {
 

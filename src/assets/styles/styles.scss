@@ -24,7 +24,7 @@ h1 {
 }
 
 main {
-  min-height: 80vh;
+  min-height: calc(100vh - 65px - 65px);
   min-width: 100vw;
   vertical-align: middle;
   /* justify-items: center; */

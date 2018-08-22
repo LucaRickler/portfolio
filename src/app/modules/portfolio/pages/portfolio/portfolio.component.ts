@@ -7,7 +7,7 @@ import { fadeAnimation } from '../../../../shared/animations/fade.animation';
   selector: 'angular-portfolio',
   animations: [ translateAnimation, fadeAnimation ],
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
 
