@@ -13,7 +13,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'Linux'
     ],
     // tslint:disable-next-line:max-line-length
-    'An educational video game build to allow elementary-school kids to exercise on basic arithmetics computations.\nI worked as the main programmer for the project. The game features a basic post-processing effect for Sobel filtering, also done by me (not active on every device because of framerate issues).\n\nLink: <a href="http://mathdungeon.napsygames.com" target="_blank">mathdungeon.napsygames.com</a>',
+    'An educational video game build to allow elementary-school kids to exercise on basic arithmetics computations.\nI worked as the main programmer for the project. The game features a basic post-processing effect for Sobel filtering, also done by me (not active on every device because of framerate issues).\n\n<a class="btn btn-primary" href="http://mathdungeon.napsygames.com" target="_blank">Discover more here</a>',
     ['Screenshot_1b_16.9_small.png', 'Screenshot_3_16.9b_small.png'],
     null,
     'Videogames'

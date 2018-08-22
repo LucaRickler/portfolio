@@ -1,0 +1,8 @@
+@import "../../../assets/styles/variables.scss";
+
+.footer {
+  height: $foot-height - 5px;
+  line-height: $foot-height - 5px;
+  color: $dark-text-color;
+  background-color: $dark-color !important;
+}

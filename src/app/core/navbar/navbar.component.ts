@@ -5,7 +5,7 @@ import { Nav } from '../nav';
 @Component({
   selector: 'angular-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
   public isCollapsed = true;
