@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
   selector: 'angular-root',
   animations: [ translateAnimation, fadeAnimation ],
   templateUrl: './core.component.html',
-  styleUrls: ['./core.component.css']
+  styleUrls: ['./core.component.scss']
 })
 export class CoreComponent {
   title = 'angular';
