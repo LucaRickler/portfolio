@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,500');
+@import "variables.scss";
 
 body {
-  background-color: rgb(255, 255, 235);
+  background-color: $bkg-color;
   font-family: 'Heebo', sans-serif;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: $nav-height;
+  padding-bottom: $foot-height;
 }
 
 /* html, body {
@@ -24,7 +25,7 @@ h1 {
 }
 
 main {
-  min-height: calc(100vh - 65px - 65px);
+  min-height: calc(100vh - $nav-height - $foot-height);
   min-width: 100vw;
   vertical-align: middle;
   /* justify-items: center; */
@@ -63,14 +64,14 @@ img {
 }
 
 a {
-  color: #db8616;
+  color: $link-color;
 }
 
 a:hover {
-  color: #e76216;
+  color: $accent-color;
 }
 
 .btn-primary {
-  background-color: #e76216 !important;
-  border-color: #e76216 !important;
+  background-color: $accent-color !important;
+  border-color: $accent-color !important;
 }

@@ -1,3 +1,5 @@
+@import "~variables.scss";
+
 .active {
-  color: #f19317 !important;
+  color: $link-color !important;
 }
