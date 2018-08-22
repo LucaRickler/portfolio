@@ -63,9 +63,14 @@ img {
 }
 
 a {
-  color: #f19317;
+  color: #db8616;
 }
 
 a:hover {
   color: #e76216;
+}
+
+.btn-primary {
+  background-color: #e76216 !important;
+  border-color: #e76216 !important;
 }
