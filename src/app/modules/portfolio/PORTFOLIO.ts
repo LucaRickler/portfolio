@@ -19,6 +19,49 @@ export const ELEMENTS: PortfolioElement[] = [
     'Videogames'
   ),
   new PortfolioElement(
+    'moonbeam',
+    'MoonBeam Game Engine', [
+      'C++',
+      'OpenGL 4.3',
+      '3D',
+      'GLFW',
+      'GLM',
+      'Linux'
+    ],
+    // tslint:disable-next-line:max-line-length
+    'A work-in-progess game and rendering engine.\n\nBuilt on OpenGL 4.3, GLFW and GLM.\n\nIt implements an Entity-Component-System paradigm and custom memory allocation.\n\n<a class="btn btn-primary" href="https://github.com/LucaRickler/opengl-game-engine" target="_blank">GitHub Repository</a>',
+    [],
+    null,
+    'Personal Projects'
+  ),
+  new PortfolioElement(
+    'sfmlplatformer',
+    'SFML 2D Platformer', [
+      'C++',
+      'SFML',
+      '2D',
+      'Linux'
+    ],
+    // tslint:disable-next-line:max-line-length
+    'A 2D platformer framework, built with SFML and C++ 11.\n\nIt implements a Unity3D-like entity-component-system and a grid-based platformer framework.\n\n<a class="btn btn-primary" href="https://github.com/LucaRickler/sfml-2d-platformer" target="_blank">GitHub Repository</a>',
+    ['sfml-2d-p-screenshot.png'],
+    null,
+    'Personal Projects'
+  ),
+  new PortfolioElement(
+    'spaceinc',
+    'Space Inc.', [
+      'Unity',
+      'C#',
+      'WebGL'
+    ],
+    // tslint:disable-next-line:max-line-length
+    'An incremental space-agency-manager game, where you build from scratch your space agency and guide it from it\'s humble beginning to the stars.',
+    [],
+    'https://moonlitchameleon.itch.io/space-inc',
+    'Personal Projects'
+  ),
+  new PortfolioElement(
     'martianwaves',
     'Martian Waves - Global Game Jam 2017', [
       'Unity',
@@ -45,33 +88,6 @@ export const ELEMENTS: PortfolioElement[] = [
     [],
     'https://moonlitchameleon.itch.io/polarity',
     'Game Jams'
-  ),
-  new PortfolioElement(
-    'sfmlplatformer',
-    'SFML 2D Platformer', [
-      'C++',
-      'SFML',
-      '2D',
-      'Linux'
-    ],
-    // tslint:disable-next-line:max-line-length
-    'A 2D platformer framework, built with SFML and C++ 11.\n\nIt implements an entity-component-system and a grid-based platformer framework.\n\nSource code can be found <a href="https://github.com/LucaRickler/sfml-2d-platformer" target="_blank">here</a>.',
-    ['sfml-2d-p-screenshot.png'],
-    null,
-    'Random Prototypes'
-  ),
-  new PortfolioElement(
-    'spaceinc',
-    'Space Inc.', [
-      'Unity',
-      'C#',
-      'WebGL'
-    ],
-    // tslint:disable-next-line:max-line-length
-    'An incremental space-agency-manager game, where you build from scratch your space agency and guide it from it\'s humble beginning to the stars.',
-    [],
-    'https://moonlitchameleon.itch.io/space-inc',
-    'Random Prototypes'
   ),
   new PortfolioElement(
     'tans',
