@@ -62,6 +62,19 @@ export const ELEMENTS: PortfolioElement[] = [
     'Personal Projects'
   ),
   new PortfolioElement(
+    'home-sweet-tomb',
+    'Home Sweet Tomb - Global Game Jam 2019', [
+      'Unity',
+      'C#',
+      'Windows'
+    ],
+    // tslint:disable-next-line:max-line-length
+    'An unnamed figure roams about an empty house, searching for something unknown, lost in the memories of a time forgotten.\n\n"Home Sweet Tomb" is a third-person exploration game where your character has to solve puzzles to overcome obstacles and unravel the link between him and this mysterious place.',
+    [],
+    'https://moonlitchameleon.itch.io/home-sweet-tomb',
+    'Game Jams'
+  ),
+  new PortfolioElement(
     'martianwaves',
     'Martian Waves - Global Game Jam 2017', [
       'Unity',
