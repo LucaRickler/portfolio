@@ -1,40 +1,48 @@
 <div class="center-vertical container full-container">
-  <h2>Portfolio: {{ element?.category }}</h2>
+  <h2>Portfolio: {{ (element | async)?.category }}</h2>
   <hr>
   <h4 class="d-flex align-items-center justify-content-between w-100">
-    @if (previousID && previousID !== id) {
-    <a class="float-left ml-2" routerLink="/portfolio/{{previousID}}">
-      <fa-icon [icon]="faAngleLeft" size="lg"></fa-icon>
-    </a>
-    }
-    <span class="ml-4 mr-4">{{ element?.title }}</span>
-    @if (nextID && nextID !== id) {
-    <a class="float-right mr-2" routerLink="/portfolio/{{nextID}}">
-      <fa-icon [icon]="faAngleRight" size="lg"></fa-icon>
-    </a>
-
-    }
+    <div class="float-left ml-2">
+      @if ((previousID | async) && (previousID | async) !== id) {
+      <a routerLink="/portfolio/{{previousID | async}}">
+        <fa-icon [icon]="faAngleLeft" size="lg"></fa-icon>
+      </a>
+      }
+    </div>
+    <span class="ml-4 mr-4">{{ (element | async)?.title }}</span>
+    <div class="float-right mr-2">
+      @if ((nextID | async) && (nextID | async) !== id) {
+      <a routerLink="/portfolio/{{nextID | async}}">
+        <fa-icon [icon]="faAngleRight" size="lg"></fa-icon>
+      </a>
+      }
+    </div>
   </h4>
   <hr>
   <div>
 
     <div>
       <p>
-        @for (badge of element?.pills; track badge) {
+        @for (badge of (element | async)?.pills; track badge) {
         <span class="badge badge-dark mr-2">{{badge}}</span>
         }
       </p>
       <!-- <div markdown [data]="element=.text"></div> -->
+      <div>
+        <p>
+          {{(element | async)?.text}}
+        </p>
+      </div>
       <div class="container-fluid">
         <div class="row justify-content-center mb-4">
-          @for (image of element?.images; track image) {
+          @for (image of (element | async)?.images; track image) {
           <div class="col-md-6 col-sm-12">
             <img src="{{image}}">
           </div>
           }
-          @if (element?.itch) {
+          @if ((element | async)?.itch) {
           <div class="col-md-6 col-sm-12">
-            <a href="{{element?.itch}}" class="btn btn-primary" role="button" target="_blank">Play it on itch.io</a>
+            <a href="{{(element | async)?.itch}}" class="btn btn-primary" role="button" target="_blank">Play it on itch.io</a>
           </div>
           }
         </div>

@@ -1,55 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PortfolioService } from '../../portfolio.service';
 import { PortfolioElement } from '../../portfolio.element';
 import { RouterLink } from '@angular/router';
-
-class Category {
-  constructor(
-    public name: string,
-    public elements: PortfolioElement[]
-  ) { }
-}
+import { Observable } from 'rxjs';
+import { Category } from '../../category';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'angular-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss'],
-  imports: [RouterLink]
+  imports: [RouterLink, AsyncPipe]
 })
-export class IndexComponent implements OnInit {
+export class IndexComponent {
 
-  elements: PortfolioElement[] = [];
-  orderedElements: Category[] = [];
+  elements: Observable<PortfolioElement[]>;
+  categories: Observable<Category[]>;
 
-  constructor(private porfolioService: PortfolioService) { }
-
-  ngOnInit() {
-    this.getElements();
+  constructor(private porfolioService: PortfolioService) { 
+    this.elements = this.porfolioService.getElements();
+    this.categories = this.porfolioService.getCategories();
   }
-
-  getElements(): void {
-    this.porfolioService.getElements().subscribe(elements => this.elements = elements);
-    this.orderedElements = [];
-    // tslint:disable-next-line:forin
-    for (const e in this.elements) {
-      const category = this.elements[e].category;
-      const index = this.getCategoryIndex(category);
-      if (index > -1) {
-        this.orderedElements[index].elements.push(this.elements[e]);
-      } else {
-        const j = this.orderedElements.push(new Category(category, []));
-        this.orderedElements[j - 1].elements.push(this.elements[e]);
-      }
-    }
-  }
-
-  private getCategoryIndex(category: string): number {
-    for (const c in this.orderedElements) {
-      if (this.orderedElements[c].name === category) {
-        return Number(c);
-      }
-    }
-    return -1;
-  }
-
 }

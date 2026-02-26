@@ -3,7 +3,7 @@
   <hr>
   <div class="table">
     <ul>
-      @for (category of orderedElements; track category) {
+      @for (category of categories | async; track category) {
         <li>
           <h3>{{ category.name }}</h3>
           <ul>
