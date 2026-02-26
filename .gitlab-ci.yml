@@ -14,9 +14,3 @@ create-pages:
   script:
     - npx ng build --output-path pages --base-href /
     - mv $CI_PROJECT_DIR/pages/browser/* pages/
-  cache:
-    paths:
-      - node_modules/
-  artifacts:
-    paths:
-      - pages
