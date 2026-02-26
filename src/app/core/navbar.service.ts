@@ -9,7 +9,6 @@ export class NavbarService {
     new Nav('Home', '/home'),
     new Nav('About', '/about'),
     new Nav('Portfolio', '/portfolio'),
-//    new Nav('Résumé', '/resume'),
     new Nav('Contact Me', '/contacts')
   ];
 

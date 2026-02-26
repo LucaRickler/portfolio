@@ -11,7 +11,7 @@ export class PortfolioService {
 
   constructor() { }
 
-  previousElement(id: string): Observable<PortfolioElement> {
+  previousElement(id: string): Observable<PortfolioElement | undefined> {
     for (const e in ELEMENTS) {
       if (ELEMENTS[e].id === id) {
         let i = Number(e) - 1;
@@ -21,9 +21,11 @@ export class PortfolioService {
         return of(ELEMENTS[i]);
       }
     }
+
+    return of();
   }
 
-  nextElement(id: string): Observable<PortfolioElement> {
+  nextElement(id: string): Observable<PortfolioElement | undefined> {
     for (const e in ELEMENTS) {
       if (ELEMENTS[e].id === id) {
         let i = Number(e) + 1;
@@ -33,15 +35,18 @@ export class PortfolioService {
         return of(ELEMENTS[i]);
       }
     }
+
+    return of();
   }
 
-  getElement(id: string): Observable<PortfolioElement> {
+  getElement(id: string): Observable<PortfolioElement | undefined> {
     for (const e in ELEMENTS) {
       if (ELEMENTS[e].id === id) {
         return of(ELEMENTS[e]);
       }
     }
-    // return ELEMENTS[this.currentElement];
+
+    return of();
   }
 
   getElements(): Observable<PortfolioElement[]> {

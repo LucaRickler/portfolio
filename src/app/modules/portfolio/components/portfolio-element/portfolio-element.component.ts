@@ -1,19 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioElement } from '../../portfolio.element';
 import { PortfolioService } from '../../portfolio.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { faAngleLeft, faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'angular-portfolio-element',
   templateUrl: './portfolio-element.component.html',
-  styleUrls: ['./portfolio-element.component.scss']
+  styleUrls: ['./portfolio-element.component.scss'],
+  imports: [FontAwesomeModule, RouterLink]
 })
 export class PortfolioElementComponent implements OnInit {
 
-  id: string;
-  previousID: string;
-  nextID: string;
-  element: PortfolioElement;
+  id: string | null = null;
+  previousID: string | undefined;
+  nextID: string | undefined;
+  element: PortfolioElement | undefined;
+
+  faAngleLeft = faAngleLeft; 
+  faAngleRight = faAngleRight;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,9 +33,11 @@ export class PortfolioElementComponent implements OnInit {
   }
 
   getElement(): void {
-    this.portfolioService.getElement(this.id).subscribe(element => this.element = element);
-    this.portfolioService.previousElement(this.id).subscribe(element => this.previousID = element.id);
-    this.portfolioService.nextElement(this.id).subscribe(element => this.nextID = element.id);
+    if (this.id) {
+      this.portfolioService.getElement(this.id).subscribe(element => this.element = element);
+      this.portfolioService.previousElement(this.id).subscribe(element => this.previousID = element?.id);
+      this.portfolioService.nextElement(this.id).subscribe(element => this.nextID = element?.id);
+    }
   }
 
   changeElement(id: string): void {

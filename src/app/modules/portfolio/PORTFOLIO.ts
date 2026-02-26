@@ -127,7 +127,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'Root'
     ],
     // tslint:disable-next-line:max-line-length
-    'Simulation of a simple <a href="https://en.wikipedia.org/wiki/Particle_shower" target="_blank">particle shower</a> event.\n\nThe project is built using the <a href="https://root.cern.ch/" target="_blank">Root Data Analysis Framework</a>, by <a href="https://cern.ch/" target="_blank">CERN</a> (required for running the project).\n\nSource code can be found <a href="https://github.com/LucaRickler/TANS" target="_blank">here</a>, while <a href="./assets/relazione_tans.pdf" target="_blank">this</a> is the project report (italian only).',
+    'Simulation of a simple <a href="https://en.wikipedia.org/wiki/Particle_shower" target="_blank">particle shower</a> event.\n\nThe project is built using the <a href="https://root.cern.ch/" target="_blank">Root Data Analysis Framework</a>, by <a href="https://cern.ch/" target="_blank">CERN</a> (required for running the project).\n\nSource code can be found <a href="https://github.com/LucaRickler/TANS" target="_blank">here</a>, while <a href="./relazione_tans.pdf" target="_blank">this</a> is the project report (italian only).',
     [],
     null,
     'Exam Projects'
@@ -140,7 +140,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'pthread'
     ],
     // tslint:disable-next-line:max-line-length
-    'A multi-agent-based simulation framework, built in C++ (std 2011) and pthread.\n\nSource code can be found <a href="https://github.com/LucaRickler/PDS---Progetto-d-esame" target="_blank">here</a>, while <a href="./assets/relazione_pds.pdf" target="_blank">this</a> is the project report (italian only).',
+    'A multi-agent-based simulation framework, built in C++ (std 2011) and pthread.\n\nSource code can be found <a href="https://github.com/LucaRickler/PDS---Progetto-d-esame" target="_blank">here</a>, while <a href="./relazione_pds.pdf" target="_blank">this</a> is the project report (italian only).',
     [],
     null,
     'Exam Projects'
@@ -153,7 +153,7 @@ export const ELEMENTS: PortfolioElement[] = [
       'Jade'
     ],
     // tslint:disable-next-line:max-line-length
-    'A multi-agent-based simulation for the modellization of the rationality of people’s decisions in a peer to peer Environment.\n\nBuilt in Java using the multi-agent library <a href="http://jade.tilab.com/" target="_blank">Jade</a>.\n\nSource code can be found <a href="https://github.com/LucaRickler/M.A.S.-Lab" target="_blank">here</a>, while <a href="./assets/relazione_mas.pdf" target="_blank">this</a> is the project report (english only).',
+    'A multi-agent-based simulation for the modellization of the rationality of people’s decisions in a peer to peer Environment.\n\nBuilt in Java using the multi-agent library <a href="http://jade.tilab.com/" target="_blank">Jade</a>.\n\nSource code can be found <a href="https://github.com/LucaRickler/M.A.S.-Lab" target="_blank">here</a>, while <a href="./relazione_mas.pdf" target="_blank">this</a> is the project report (english only).',
     [],
     null,
     'Exam Projects'

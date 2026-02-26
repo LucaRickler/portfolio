@@ -3,15 +3,19 @@
   <hr>
   <div class="table">
     <ul>
-      <li *ngFor="let category of orderedElements; let i = index">
-        <h3>{{ category.name }}</h3>
-        <ul>
-          <li *ngFor="let element of orderedElements[i].elements; let j = index">
-            <a routerLink="/portfolio/{{element.id}}">{{element.title}}</a>
-          </li>
-        </ul>
-        <br>
-      </li>
+      @for (category of orderedElements; track category) {
+        <li>
+          <h3>{{ category.name }}</h3>
+          <ul>
+            @for (element of category.elements; track element.id) {
+              <li>
+                <a routerLink="/portfolio/{{element.id}}">{{element.title}}</a>
+              </li>
+            }
+          </ul>
+          <br>
+        </li>
+      }
     </ul>
   </div>
 </div>

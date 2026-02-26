@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../../portfolio.service';
 import { PortfolioElement } from '../../portfolio.element';
+import { RouterLink } from '@angular/router';
 
 class Category {
   constructor(
@@ -12,12 +13,13 @@ class Category {
 @Component({
   selector: 'angular-index',
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  styleUrls: ['./index.component.scss'],
+  imports: [RouterLink]
 })
 export class IndexComponent implements OnInit {
 
-  elements: PortfolioElement[];
-  orderedElements: Category[];
+  elements: PortfolioElement[] = [];
+  orderedElements: Category[] = [];
 
   constructor(private porfolioService: PortfolioService) { }
 

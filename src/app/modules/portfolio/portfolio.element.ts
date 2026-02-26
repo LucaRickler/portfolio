@@ -5,7 +5,7 @@ export class PortfolioElement {
     public pills: string[],
     public text: string,
     public images: string[],
-    public itch: string,
+    public itch: string | null,
     public category: string
   ) { }
 }

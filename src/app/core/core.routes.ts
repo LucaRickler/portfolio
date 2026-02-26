@@ -1,21 +1,14 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { LandingComponent } from './landing/landing.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ContactComponent } from './contact/contact.component';
+import { portfolioRoutes } from '../modules/portfolio/portfolio-routing.module';
 
-const routes: Routes = [
+export const coreRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: LandingComponent },
   { path: 'about', component: WelcomeComponent },
-  { path: 'portfolio', loadChildren: 'src/app/modules/portfolio/portfolio-routing.module#PortfolioRoutingModule' },
-//  { path: 'resume', compomemt: },
+  { path: 'portfolio', children: portfolioRoutes },
   { path: 'contacts', component: ContactComponent }
 ];
-
-@NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
-})
-export class AppRoutingModule { }
