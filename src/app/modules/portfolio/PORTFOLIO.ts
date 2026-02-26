@@ -19,6 +19,19 @@ export const ELEMENTS: PortfolioElement[] = [
     'Videogames'
   ),
   new PortfolioElement(
+    'dungeon-crawler',
+    'Prototype Dungeon Crawler Game',
+    [
+      'Rust',
+      'Bevy',
+      '3D'
+    ],
+    '<p>A prototype for a dungeon crawler game. Made with <a href="https://bevy.org" target="_blank">Bevy Engine</a> in Rust</p><p>The project includes a level editor, built with EGUI.</p><a class="btn btn-primary" href="https://github.com/LucaRickler/prototype-dungeon-crawler" target="_blank">GitHub Repository</a>',
+    [],
+    null,
+    'Personal Projects'
+  ),
+  new PortfolioElement(
     'cookbook',
     'Cookbook', [
     'Angular',
