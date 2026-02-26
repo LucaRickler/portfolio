@@ -36,22 +36,22 @@ export const ELEMENTS: PortfolioElement[] = [
     null,
     'Personal Projects'
   ),
-  new PortfolioElement(
-    'moonbeam',
-    'MoonBeam Game Engine', [
-    'C++',
-    'OpenGL 4.3',
-    '3D',
-    'GLFW',
-    'GLM',
-    'Linux'
-  ],
-    // tslint:disable-next-line:max-line-length
-    '<p>A work-in-progess game and rendering engine.</p><p>Built on OpenGL 4.3, GLFW and GLM.</p><p>It implements an Entity-Component-System paradigm and custom memory allocation.</p><a class="btn btn-primary" href="https://github.com/LucaRickler/opengl-game-engine" target="_blank">GitHub Repository</a>',
-    [],
-    null,
-    'Personal Projects'
-  ),
+  // new PortfolioElement(
+  //   'moonbeam',
+  //   'MoonBeam Game Engine', [
+  //   'C++',
+  //   'OpenGL 4.3',
+  //   '3D',
+  //   'GLFW',
+  //   'GLM',
+  //   'Linux'
+  // ],
+  //   // tslint:disable-next-line:max-line-length
+  //   '<p>A work-in-progess game and rendering engine.</p><p>Built on OpenGL 4.3, GLFW and GLM.</p><p>It implements an Entity-Component-System paradigm and custom memory allocation.</p><a class="btn btn-primary" href="https://github.com/LucaRickler/opengl-game-engine" target="_blank">GitHub Repository</a>',
+  //   [],
+  //   null,
+  //   'Personal Projects'
+  // ),
   new PortfolioElement(
     'sfmlplatformer',
     'SFML 2D Platformer', [
