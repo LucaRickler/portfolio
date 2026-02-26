@@ -6,6 +6,7 @@ import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { map, Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'angular-portfolio-element',
@@ -26,7 +27,8 @@ export class PortfolioElementComponent {
   constructor(
     private route: ActivatedRoute,
     router: Router,
-    private portfolioService: PortfolioService
+    private portfolioService: PortfolioService,
+    private sanitizer: DomSanitizer,
   ) {
     this.element = this.portfolioService.getElement();
     this.previousID = this.portfolioService.getPrevious().pipe(map(item => item?.id));
@@ -47,5 +49,9 @@ export class PortfolioElementComponent {
     if (this.id) {
       this.portfolioService.selectElement(this.id);
     }
+  }
+
+  safeHtml(html: string | undefined) {
+    return this.sanitizer.bypassSecurityTrustHtml(html ?? '');
   }
 }

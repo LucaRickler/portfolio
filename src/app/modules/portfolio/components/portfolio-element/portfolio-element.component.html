@@ -27,12 +27,7 @@
         <span class="badge badge-dark mr-2">{{badge}}</span>
         }
       </p>
-      <!-- <div markdown [data]="element=.text"></div> -->
-      <div>
-        <p>
-          {{(element | async)?.text}}
-        </p>
-      </div>
+      <div [innerHtml]="safeHtml((element | async)?.text)"></div> 
       <div class="container-fluid">
         <div class="row justify-content-center mb-4">
           @for (image of (element | async)?.images; track image) {
