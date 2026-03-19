@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'bootstrap/scss/bootstrap';
-@import 'variables.scss';
+@use 'variables.scss';
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,500');
 
 body {
-  background-color: $bkg-color;
+  background-color: variables.$bkg-color;
   font-family: 'Heebo', sans-serif;
-  padding-top: $nav-height;
-  padding-bottom: $foot-height;
+  padding-top: variables.$nav-height;
+  padding-bottom: variables.$foot-height;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
 }
 
 main {
-  min-height: calc(100vh - #{$nav-height} - #{$foot-height});
+  min-height: calc(100vh - #{variables.$nav-height} - #{variables.$foot-height});
   min-width: 100vw;
   vertical-align: middle;
   /* justify-items: center; */
@@ -40,9 +40,9 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: variables.$link-color;
   &:hover {
-    color: $accent-color;
+    color: variables.$accent-color;
   }
 
   &:focus {
@@ -51,6 +51,6 @@ a {
 }
 
 .btn-primary {
-  background-color: $accent-color !important;
-  border-color: $accent-color !important;
+  background-color: variables.$accent-color !important;
+  border-color: variables.$accent-color !important;
 }

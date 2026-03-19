@@ -1,15 +1,15 @@
-@import "../../../../../variables.scss";
+@use "../../../../../variables.scss";
 
 ul {
   list-style: none;
   padding: 0;
-  background-color: $bkg-color;
+  background-color: variables.$bkg-color;
 
   h3 {
-    background-color: $bkg-color;
+    background-color: variables.$bkg-color;
   }
 
   li {
-    background-color: $bkg-color;
+    background-color: variables.$bkg-color;
   }
 }

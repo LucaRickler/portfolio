@@ -1,4 +1,4 @@
-@import "../../../../../variables.scss";
+@use "../../../../../variables.scss";
 
 iframe {
   max-width: 100%;
@@ -6,8 +6,8 @@ iframe {
 }
 
 .btn-primary {
-  background-color: $accent-color !important;
-  border-color: $accent-color !important;
+  background-color: variables.$accent-color !important;
+  border-color: variables.$accent-color !important;
 }
 
 .full-container {
