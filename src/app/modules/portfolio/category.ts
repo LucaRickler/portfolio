@@ -1,8 +1,8 @@
-import { PortfolioElement } from "./portfolio.element";
+import { PortfolioElement } from './portfolio.element';
 
 export class Category {
   constructor(
     public name: string,
-    public elements: PortfolioElement[]
-  ) { }
+    public elements: PortfolioElement[],
+  ) {}
 }

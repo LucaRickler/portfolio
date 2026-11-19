@@ -8,12 +8,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   selector: 'angular-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
-  imports: [RouterLink, RouterLinkActive, NgbModule]
+  imports: [RouterLink, RouterLinkActive, NgbModule],
 })
 export class NavbarComponent {
   public isCollapsed = true;
   navs: Nav[];
   constructor(private navbarService: NavbarService) {
-    this.navs = this.navbarService.getNavs()
+    this.navs = this.navbarService.getNavs();
   }
 }

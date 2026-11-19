@@ -10,12 +10,9 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
   imports: [FontAwesomeModule, RouterLink],
 })
 export class LandingComponent implements OnInit {
-
   faAngleDown = faAngleDown;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

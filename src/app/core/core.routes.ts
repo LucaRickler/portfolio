@@ -10,5 +10,5 @@ export const coreRoutes: Routes = [
   { path: 'home', component: LandingComponent },
   { path: 'about', component: WelcomeComponent },
   { path: 'portfolio', children: portfolioRoutes },
-  { path: 'contacts', component: ContactComponent }
+  { path: 'contacts', component: ContactComponent },
 ];

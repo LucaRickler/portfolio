@@ -5,13 +5,10 @@ import { RouterLink } from '@angular/router';
   selector: 'angular-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss'],
-  imports: [RouterLink]
+  imports: [RouterLink],
 })
 export class WelcomeComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

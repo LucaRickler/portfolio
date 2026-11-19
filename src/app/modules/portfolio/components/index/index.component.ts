@@ -10,14 +10,13 @@ import { AsyncPipe } from '@angular/common';
   selector: 'angular-index',
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.scss'],
-  imports: [RouterLink, AsyncPipe]
+  imports: [RouterLink, AsyncPipe],
 })
 export class IndexComponent {
-
   elements: Observable<PortfolioElement[]>;
   categories: Observable<Category[]>;
 
-  constructor(private porfolioService: PortfolioService) { 
+  constructor(private porfolioService: PortfolioService) {
     this.elements = this.porfolioService.getElements();
     this.categories = this.porfolioService.getCategories();
   }

@@ -15,7 +15,6 @@ import { DomSanitizer } from '@angular/platform-browser';
   imports: [FontAwesomeModule, RouterLink, AsyncPipe],
 })
 export class PortfolioElementComponent {
-
   id: string | null;
   previousID: Observable<string | undefined>;
   nextID: Observable<string | undefined>;
@@ -31,13 +30,13 @@ export class PortfolioElementComponent {
     private sanitizer: DomSanitizer,
   ) {
     this.element = this.portfolioService.getElement();
-    this.previousID = this.portfolioService.getPrevious().pipe(map(item => item?.id));
-    this.nextID = this.portfolioService.getNext().pipe(map(item => item?.id));
+    this.previousID = this.portfolioService.getPrevious().pipe(map((item) => item?.id));
+    this.nextID = this.portfolioService.getNext().pipe(map((item) => item?.id));
 
     this.id = this.route.snapshot.paramMap.get('id');
     this.updateRoute();
 
-    router.events.subscribe(val => {
+    router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
         this.id = val.url.split('/')[2];
         this.updateRoute();

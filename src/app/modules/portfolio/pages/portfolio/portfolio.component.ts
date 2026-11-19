@@ -3,19 +3,15 @@ import { translateAnimation } from '../../../../shared/animations/translate.anim
 import { fadeAnimation } from '../../../../shared/animations/fade.animation';
 import { RouterOutlet } from '@angular/router';
 
-
 @Component({
   selector: 'angular-portfolio',
   animations: [translateAnimation, fadeAnimation],
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
-  imports: [RouterOutlet]
+  imports: [RouterOutlet],
 })
 export class PortfolioComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

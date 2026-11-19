@@ -3,13 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'angular-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-
-  constructor() { }
+  constructor() {}
 
   public getYear(): string {
-    return (new Date()).getFullYear().toString();
+    return new Date().getFullYear().toString();
   }
 }

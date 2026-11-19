@@ -1,6 +1,6 @@
 <div class="center-vertical">
   <h2>Porfolio</h2>
-  <hr>
+  <hr />
   <div class="table">
     <ul>
       @for (category of categories | async; track category) {
@@ -9,11 +9,11 @@
           <ul>
             @for (element of category.elements; track element.id) {
               <li>
-                <a routerLink="/portfolio/{{element.id}}">{{element.title}}</a>
+                <a routerLink="/portfolio/{{ element.id }}">{{ element.title }}</a>
               </li>
             }
           </ul>
-          <br>
+          <br />
         </li>
       }
     </ul>

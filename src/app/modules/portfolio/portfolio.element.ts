@@ -1,11 +1,11 @@
 export class PortfolioElement {
-  constructor (
+  constructor(
     public id: string,
     public title: string,
     public pills: string[],
     public text: string,
     public images: string[],
     public itch: string | null,
-    public category: string
-  ) { }
+    public category: string,
+  ) {}
 }

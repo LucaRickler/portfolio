@@ -5,11 +5,11 @@ import { ELEMENTS } from './PORTFOLIO';
 import { Category } from './category';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PortfolioService {
   currentElement = ELEMENTS[0].id;
-  categories: Category[] = []
+  categories: Category[] = [];
 
   private selectedElement = new BehaviorSubject<PortfolioElement>(ELEMENTS[0]);
   private previousElement = new BehaviorSubject<PortfolioElement | undefined>(undefined);
@@ -39,7 +39,7 @@ export class PortfolioService {
   selectElement(id: string) {
     for (const e of ELEMENTS) {
       if (e.id === id) {
-        this.selectedElement.next(e)
+        this.selectedElement.next(e);
 
         for (const e in ELEMENTS) {
           if (ELEMENTS[e].id === id) {
